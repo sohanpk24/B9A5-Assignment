@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus-Ticket-Landing Page</title>
+
+    <!-- daisyUI and tailwindcss -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body class="poppins-font">
+    <header class="">
+
+        <!-- navigation bar -->
+        <div class="navbar bg-base-100 lg:w-[1173px] lg:h-[56px] m-auto">
+            <div class="navbar-start">
+              <a class="btn btn-ghost font-extrabold text-xl">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end text-[#1DD100]">
+              <a class="btn text-[#1DD100] text-xl">Bus <img class="w-6 h-6" src="images/bus-icon.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- banner section -->
+        <section class="bg-[url(images/banner.png)] lg:w-[1171px] lg:h-[550px] bg-center m-auto bg-no-repeat bg-cover">
+           <div class=" justify-center items-center pt-6 lg:pt-10">
+               <h1 class="text-center text-[30px] lg:text-[60px] lg:w-[742px] text-white font-extrabold m-auto">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span></h1>
+               <p class="text-center lg:w-[690px] m-auto mt-3 lg:mt-10 text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+               <div class="text-center mt-4 lg:mt-10">
+                <button class="btn bg-[#1DD100] border-none">Buy Tickets</button>
+               </div>
+           </div>
+        </section>
+
+    </header>
+
+    <main>
+        <!-- offer section -->
+     <section class=" mt-[30px] lg:mt-[100px]">
+       <div>
+        <h2 class=" text-[30px] lg:text-[40px] font-bold text-center ">Best offers for you</h2>
+       </div>
+    <div class="flex flex-col lg:flex-row lg:w-[1171px] m-auto mt-3 lg:mt-8">
+        <div class="flex bg-[url(images/Rectangle-left.png)] w-[550px] h-28 rounded-2xl lg:w-[573px] lg:h-[220px] bg-center m-auto bg-no-repeat mb-3">
+            <div class="w-3/5 m-auto border-dashed border-r-2">
+                <h4 class="text-[20px] lg:text-[40px] font-semibold">15% OFF</h4>
+                <h6 class="lg:text-xl font-medium">on your next purchase</h6>
+                <p class="text-gray-600">use by January 2024</p>
+            </div>
+            <div class="m-auto">
+                <h2 class="lg:text-[32px] font-semibold">NEW15</h2>
+                <p class="text-gray-600">Coupon Code</p>
+            </div>
+            </div>
+            <div class="flex m-auto bg-[url(images/r.png)] lg:w-[573px] lg:h-[220px] bg-center bg-no-repeat w-[550px] h-28 rounded-2xl">
+            <div class="w-3/5 m-auto border-dashed border-r-2">
+                <h4 class="text-[40px] font-semibold ">20% OFF</h4>
+                <h6 class="text-xl font-medium">on your next purchase</h6>
+                <p class="text-gray-600">use by January 2024</p>
+            </div>
+            <div class="m-auto">
+                <h2 class="text-[32px] font-semibold">Couple 20</h2>
+                <p class="text-gray-600">Coupon Code</p>
+            </div>
+            </div>
+        </div>
+        <div class="w-[150px] m-auto mt-6 lg:mt-14">
+            <button class="btn bg-white text-[#1DD100] border-solid border-[#1DD100] ">See All Offers</button>
+        </div>
+
+     </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
