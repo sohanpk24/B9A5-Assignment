@@ -19,4 +19,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  };
+
+.tbody{
+  display: flex;
+  width: 358px;
+  justify-content: space-between;
+}

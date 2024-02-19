@@ -11,6 +11,13 @@
 
     <!-- css link -->
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .tbody tr{
+            display: flex;
+            justify-content: space-between;
+            width: 358px;
+        }
+    </style>
 
 </head>
 <body class="poppins-font">
@@ -101,10 +108,10 @@
             </div>
             <div class="flex bg-gray-300 space-x-1 lg:p-3 w-[162px] m-auto rounded-md text-[#1DD100]">
                 <div><img class="w-[22px]" src="images/seat-green.png" alt=""></div>
-                <div class=""><p>40 Seats left</p></div>
+                <div class=""><p><span id="Total-seat">40</span> Seats left</p></div>
             </div>
         </div>
-
+            <!--bus route -->
         <div class="flex flex-col lg:flex-row bg-[#F7F8F8] ">
             <div class="space-y-4 border-s-sky-400 border">
                 <div class="flex justify-between lg:justify-between p-2">
@@ -129,7 +136,8 @@
             <div class="m-auto mt-4 lg:pl-[135px] lg:border-l border-s-sky-300">
                 <div><img src="images/fare.png" alt=""></div>
                 <div>
-                    <h3>550 Taka</h3>
+                    <!-- price 550 -->
+                    <h3><span id="seat-price">550</span> Taka</h3>
                     <p>per Seat</p>
                 </div>
             </div>
@@ -137,10 +145,10 @@
      </section>
 
     <!-- seat section -->
-    <section class="lg:w-[1173px] m-auto mt-[50px] lg:mt-[100px] mb-5 lg:mb-10 space-y-4 flex justify-between">
+    <section class="lg:w-[1173px] m-auto mt-[50px] lg:mt-[100px] mb-5 lg:mb-10 space-y-4 flex lg:flex-row flex-col justify-between">
 
         <!-- bus seat -->
-        <div class="w-3/5 space-y-4">
+        <div class="lg:w-3/5 space-y-4">
             <div>
                 <h2 class="font-bold text-2xl">Select Your Seat</h2>
             </div>
@@ -164,76 +172,97 @@
             </div>
             <div class="your-seat">
                 <div class="serial">A</div>
-                <div class="seat">A1</div>
-                <div class="seat">A2</div>
-                <div class="seat">A3</div>
-                <div class="seat">A4</div>
+                <div id="A1" class="seat">A1</div>
+                <div id="A2" class="seat">A2</div>
+                <div id="A3" class="seat">A3</div>
+                <div id="A4" class="seat">A4</div>
                 <div class="seat">B</div>
-                <div class="seat">B1</div>
-                <div class="seat">B2</div>
-                <div class="seat">B3</div>
-                <div class="seat">B4</div>
+                <div id="B1" class="seat">B1</div>
+                <div id="B2" class="seat">B2</div>
+                <div id="B3" class="seat">B3</div>
+                <div id="B4" class="seat">B4</div>
                 <div class="serial">C</div>
-                <div class="seat">C1</div>
-                <div class="seat">C2</div>
-                <div class="seat">C3</div>
-                <div class="seat">C4</div>
+                <div id="C1" class="seat">C1</div>
+                <div id="C2" class="seat">C2</div>
+                <div id="C3" class="seat">C3</div>
+                <div id="C4" class="seat">C4</div>
                 <div class="serial">D</div>
-                <div class="seat">D1</div>
-                <div class="seat">D2</div>
-                <div class="seat">D3</div>
-                <div class="seat">D4</div>
+                <div id="D1" class="seat">D1</div>
+                <div id="D2" class="seat">D2</div>
+                <div id="D3" class="seat">D3</div>
+                <div id="D4" class="seat">D4</div>
                 <div class="serial">E</div>
-                <div class="seat">E1</div>
-                <div class="seat">E2</div>
-                <div class="seat">E3</div>
-                <div class="seat">E4</div>
+                <div id="E1" class="seat">E1</div>
+                <div id="E2" class="seat">E2</div>
+                <div id="E3" class="seat">E3</div>
+                <div id="E4" class="seat">E4</div>
                 <div class="serial">F</div>
-                <div class="seat">F1</div>
-                <div class="seat">F2</div>
-                <div class="seat">F3</div>
-                <div class="seat">F4</div>
+                <div id="F1" class="seat">F1</div>
+                <div id="F2" class="seat">F2</div>
+                <div id="F3" class="seat">F3</div>
+                <div id="F4" class="seat">F4</div>
                 <div class="serial">G</div>
-                <div class="seat">G1</div>
-                <div class="seat">G2</div>
-                <div class="seat">G3</div>
-                <div class="seat">G4</div>
+                <div id="G1" class="seat">G1</div>
+                <div id="G2" class="seat">G2</div>
+                <div id="G3" class="seat">G3</div>
+                <div id="G4" class="seat">G4</div>
                 <div class="serial">H</div>
-                <div class="seat">H1</div>
-                <div class="seat">H2</div>
-                <div class="seat">H3</div>
-                <div class="seat">H4</div>
+                <div id="H1" class="seat">H1</div>
+                <div id="H2" class="seat">H2</div>
+                <div id="H3" class="seat">H3</div>
+                <div id="H4" class="seat">H4</div>
                 <div class="serial">I</div>
-                <div class="seat">I1</div>
-                <div class="seat">I2</div>
-                <div class="seat">I3</div>
-                <div class="seat">I4</div>
+                <div id="I1" class="seat">I1</div>
+                <div id="I2" class="seat">I2</div>
+                <div id="I3" class="seat">I3</div>
+                <div id="I4" class="seat">I4</div>
                 <div class="serial">J</div>
-                <div class="seat">J1</div>
-                <div class="seat">J2</div>
-                <div class="seat">J3</div>
-                <div class="seat">J4</div>
+                <div id="J1" class="seat">J1</div>
+                <div id="J2" class="seat">J2</div>
+                <div id="J3" class="seat">J3</div>
+                <div id="J4" class="seat">J4</div>
             </div>
         </div>
 
         <!-- your information -->
-        <div class="w-2/6">
+        <div class="lg:w-2/6">
             <h2 class="font-bold text-2xl mb-5">Select Your Seat</h2>
             <div class="select-info-container">
                 <div class="space-y-4 bg-gray-100 p-4 rounded-md">
                     <div class="flex justify-between text-xl font-medium">
-                        <h4>Seat <span>2</span> </h4>
+                        <!-- <h4>Seat <span id="seat-count" >0</span> </h4>
                         <h4>Class</h4>
-                        <h4>Price</h4>
+                        <h4>Price</h4> -->
+
+                        <table class="">
+                            <thead class="">
+                                <tr class="flex justify-between w-[358px]">
+                                    <th>Seat<span id="seat-count" class="bg-[#1DD100] rounded-full">0</span></th>
+                                    <th>Class</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody id="seat-economy" class="tbody">
+                                <tr class="">
+                                    <td>C2</td>
+                                    <td>Economoy</td>
+                                    <td><span>550</span></td>
+                                </tr>
+                            </tbody> 
+                        </table> 
+
                     </div>
-                    <div class="flex justify-between">
-                        <h4>C2</h4>
-                        <h4>Economoy</h4>
-                        <h4>550</h4>
+                    <div class=" flex justify-between list-none">
+                        <!-- <li><p>C2</p></li>
+                        <li><p>Economoy</p></li>
+
+                        <li><p>550</p></li> -->
+                        
+
                     </div>
                     <div class="flex justify-between text-xl font-semibold">
                         <h4>Total Price</h4>
-                        <h4>BDT 1100</h4>
+                        <h4>BDT <span id="Total-cost">0</span></h4>
                     </div>
                     <div>
                         <label class="input input-bordered flex items-center gap-2">
@@ -243,11 +272,11 @@
                     </div>
                     <div class="flex justify-between text-xl font-semibold">
                         <h4>Grand Total</h4>
-                        <h4>BDT 1100</h4>
+                        <h4>BDT <span id="gran-total-cost">0</span></h4>
                     </div>
                 </div>
                 <div>
-                    <div>
+                    <div class="m-auto">
                         <label class="form-control w-full max-w-xs">
                             <div class="label">
                                 <span class="label-text">Passenger Name*</span>
@@ -281,6 +310,8 @@
 
     </main>
     <footer>
+
+                 
 
     </footer>
 
